@@ -1,0 +1,17 @@
+{
+  "name": "rpath Docs",
+  "short_name": "rpath",
+  "description": "Refresh your shell PATH and environment without restarting.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050706",
+  "theme_color": "#00D0B0",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
