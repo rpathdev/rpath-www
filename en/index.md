@@ -15,7 +15,7 @@ editLink: false
           rpath rebuilds PATH from system, user, shell, and package-manager sources, removes duplicate entries, preserves critical system paths, and emits shell commands that update the current terminal session.
         </p>
         <div class="rpath-actions">
-          <a class="rpath-action rpath-action--primary" href="/guide/quick-start">Start with rpath</a>
+          <a class="rpath-action rpath-action--primary" href="/guide/installation">Start with rpath</a>
           <a class="rpath-action" href="/reference/commands">Command reference</a>
           <a class="rpath-action" href="https://github.com/builtbyjonas/rpath">GitHub</a>
         </div>

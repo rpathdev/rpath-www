@@ -15,7 +15,7 @@ editLink: false
           rpath baut PATH aus System-, Benutzer-, Shell- und Paketmanager-Quellen neu auf, entfernt doppelte Einträge, erhält kritische Systempfade und gibt Shell-Befehle aus, die die aktuelle Terminalsitzung aktualisieren.
         </p>
         <div class="rpath-actions">
-          <a class="rpath-action rpath-action--primary" href="/de/guide/quick-start">Mit rpath starten</a>
+          <a class="rpath-action rpath-action--primary" href="/de/guide/installation">Mit rpath starten</a>
           <a class="rpath-action" href="/de/reference/commands">Befehlsreferenz</a>
           <a class="rpath-action" href="https://github.com/builtbyjonas/rpath">GitHub</a>
         </div>
