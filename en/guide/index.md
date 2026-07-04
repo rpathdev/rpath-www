@@ -19,7 +19,7 @@ description: Learn how rpath refreshes PATH and environment state.
 
 | Area | What to read |
 | --- | --- |
-| Setup | [Installation](./installation), [Quick Start](./quick-start) |
+| Setup | [Installation](./installation), [Quick Start](./quick-start), [Uninstall](./uninstall) |
 | Shell behavior | [Shell Wrappers](./shell-wrappers) |
 | Diagnostics and repair | [PATH Planning](./path-planning), [Troubleshooting](./troubleshooting) |
 | Rollback | [Snapshots & Versions](./snapshots-and-versions) |
@@ -28,6 +28,6 @@ description: Learn how rpath refreshes PATH and environment state.
 
 ## Safety model
 
-`rpath` does not modify system-wide environment variables when you refresh. It computes a plan and prints commands for the selected shell. Persistent writes happen only for explicit commands such as `install`, `uninstall`, `snapshot`, `watch --install-service`, or `integrate ... install`.
+`rpath` does not modify system-wide environment variables when you refresh. It computes a plan and prints commands for the selected shell. Persistent writes happen only for explicit commands such as `install`, `uninstall`, `upgrade`, `snapshot`, `watch --install-service`, or `integrate ... install`.
 
 Profile installers create backups before editing shell profile files. Emit mode refuses to print mutation commands when the plan contains hard errors.

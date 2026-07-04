@@ -71,6 +71,17 @@ rpath repair --emit
 
 Erstellt einen Plan mit entfernten ungültigen Einträgen. Nutze `--emit`, um den reparierten Plan über einen Wrapper oder manuellen Emit-Ausdruck anzuwenden.
 
+## `upgrade`
+
+```sh
+rpath upgrade
+rpath upgrade --check
+rpath upgrade --dry-run
+rpath upgrade --json
+```
+
+Prueft GitHub Releases auf eine neuere rpath-Version. Ohne `--check` verifiziert der Befehl die Release-Checksumme und ersetzt die aktuelle installierte Binary, wenn ein Update verfuegbar ist.
+
 ## `snapshot`
 
 ```text
@@ -101,7 +112,7 @@ rpath uninstall
 rpath uninstall --all
 ```
 
-Installiert oder entfernt Shell-Wrapper. `--all` zielt auf alle Shells, die zum aktuellen Betriebssystem passen.
+Installiert oder entfernt Shell-Wrapper. `--all` zielt auf alle Shells, die zum aktuellen Betriebssystem passen. Nutze die gehosteten Uninstall-Skripte, um Binary und Installer-PATH-Eintrag zu entfernen.
 
 ## `init`
 

@@ -71,6 +71,17 @@ rpath repair --emit
 
 Builds a plan with invalid entries removed. Use `--emit` to apply the repaired plan through a wrapper or manual emit expression.
 
+## `upgrade`
+
+```sh
+rpath upgrade
+rpath upgrade --check
+rpath upgrade --dry-run
+rpath upgrade --json
+```
+
+Checks GitHub Releases for a newer rpath version. Without `--check`, it verifies the release checksum and replaces the current installed binary when an update is available.
+
 ## `snapshot`
 
 ```text
@@ -101,7 +112,7 @@ rpath uninstall
 rpath uninstall --all
 ```
 
-Installs or removes shell wrappers. `--all` targets every shell relevant to the current operating system.
+Installs or removes shell wrappers. `--all` targets every shell relevant to the current operating system. Use the hosted uninstall scripts to remove the binary and installer PATH entry.
 
 ## `init`
 

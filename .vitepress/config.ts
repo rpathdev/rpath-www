@@ -16,6 +16,7 @@ const deSiteDescription =
 const englishGuide = [
   { text: "Overview", link: "/guide/" },
   { text: "Installation", link: "/guide/installation" },
+  { text: "Uninstall", link: "/guide/uninstall" },
   { text: "Quick Start", link: "/guide/quick-start" },
   { text: "Shell Wrappers", link: "/guide/shell-wrappers" },
   { text: "PATH Planning", link: "/guide/path-planning" },
@@ -27,6 +28,7 @@ const englishGuide = [
 const germanGuide = [
   { text: "Überblick", link: "/de/guide/" },
   { text: "Installation", link: "/de/guide/installation" },
+  { text: "Deinstallation", link: "/de/guide/uninstall" },
   { text: "Schnellstart", link: "/de/guide/quick-start" },
   { text: "Shell-Wrapper", link: "/de/guide/shell-wrappers" },
   { text: "PATH-Planung", link: "/de/guide/path-planning" },

@@ -9,7 +9,7 @@ description: rpath-Sicherheitsmodell und Melden von Schwachstellen.
 
 ## Sicherheitsprinzipien
 
-- Keine Runtime-Netzwerkaufrufe.
+- Keine Netzwerkaufrufe waehrend eines Refreshs. Gehostete Install-Skripte und `rpath upgrade` nutzen das Netzwerk nur, wenn sie explizit gestartet werden.
 - Keine systemweite Umgebungsänderung während eines Refreshs.
 - Keine Shell-Befehle, wenn der Umgebungsplan harte Fehler enthält.
 - Profil-Dateien werden gesichert, bevor Wrapper-Installation sie ändert.
@@ -24,6 +24,7 @@ Persistente Schreibvorgänge passieren nur bei expliziten Befehlen wie:
 ```sh
 rpath install
 rpath uninstall
+rpath upgrade
 rpath snapshot save
 rpath watch --install-service
 rpath integrate explorer install

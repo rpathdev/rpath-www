@@ -9,7 +9,7 @@ description: rpath security model and vulnerability reporting.
 
 ## Security principles
 
-- No runtime network calls.
+- No network calls during refresh. Hosted install scripts and `rpath upgrade` use the network only when explicitly run.
 - No system-wide environment mutation during refresh.
 - No shell commands emitted when the environment plan has hard errors.
 - Profile files are backed up before wrapper installation changes them.
@@ -24,6 +24,7 @@ Persistent writes happen only when you explicitly use commands such as:
 ```sh
 rpath install
 rpath uninstall
+rpath upgrade
 rpath snapshot save
 rpath watch --install-service
 rpath integrate explorer install

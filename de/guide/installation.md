@@ -5,11 +5,11 @@ description: rpath per Skript, Release-Artefakt oder aus dem Quellcode installie
 
 # Installation
 
-`rpath` ist eine einzelne Rust-CLI namens `rpath` (`rpath.exe` unter Windows). Sobald die Binary auf `PATH` liegt, führe einmal `rpath install` für den Shell-Wrapper aus.
+`rpath` ist eine einzelne Rust-CLI namens `rpath` (`rpath.exe` unter Windows). Der gehostete Installer legt sie benutzerlokal ab, prueft die GitHub-Release-Checksumme und fragt, ob der Shell-Wrapper fuer die erkannte Shell installiert werden soll.
 
 ## Installationsskripte
 
-Nutze den gehosteten Installer, sobald er verfügbar ist:
+Nutze den gehosteten Installer:
 
 ::: code-group
 
@@ -30,6 +30,15 @@ rpath --version
 rpath doctor
 ```
 
+Defaults:
+
+| Plattform | Installationsverzeichnis |
+| --- | --- |
+| Linux/macOS | `~/.local/bin` |
+| Windows | `%LOCALAPPDATA%\Programs\rpath\bin` |
+
+Nutze `--dry-run` oder `-DryRun`, um die Installation vorab zu pruefen. Mit `--wrappers no` oder `-InstallWrappers no` ueberspringst du die Wrapper-Frage.
+
 ## Release-Artefakte
 
 GitHub Releases paketieren die kompilierte Binary zusammen mit `README.md`, `LICENSE` und `CHANGELOG.md`.
@@ -44,6 +53,15 @@ GitHub Releases paketieren die kompilierte Binary zusammen mit `README.md`, `LIC
 | Windows arm64 | `rpath-windows-aarch64.zip` |
 
 Lade das passende Archiv herunter, entpacke es und lege die Binary in ein Verzeichnis, das bereits auf `PATH` liegt.
+
+## Upgrade
+
+```sh
+rpath upgrade
+rpath upgrade --check
+```
+
+`upgrade` nutzt explizit das Netzwerk, prueft das neueste GitHub Release, verifiziert die Release-Checksumme und ersetzt die aktuelle installierte Binary, wenn eine neuere Version verfuegbar ist.
 
 ## Aus dem Quellcode bauen
 

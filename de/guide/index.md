@@ -19,7 +19,7 @@ description: Lerne, wie rpath PATH und Umgebungszustand aktualisiert.
 
 | Bereich | Seite |
 | --- | --- |
-| Einrichtung | [Installation](./installation), [Schnellstart](./quick-start) |
+| Einrichtung | [Installation](./installation), [Schnellstart](./quick-start), [Deinstallation](./uninstall) |
 | Shell-Verhalten | [Shell-Wrapper](./shell-wrappers) |
 | Diagnose und Reparatur | [PATH-Planung](./path-planning), [Fehlerbehebung](./troubleshooting) |
 | Rollback | [Snapshots & Versionen](./snapshots-and-versions) |
@@ -28,6 +28,6 @@ description: Lerne, wie rpath PATH und Umgebungszustand aktualisiert.
 
 ## Sicherheitsmodell
 
-`rpath` verändert beim Refresh keine systemweiten Umgebungsvariablen. Es berechnet einen Plan und gibt Befehle für die gewählte Shell aus. Persistente Schreibvorgänge passieren nur bei expliziten Befehlen wie `install`, `uninstall`, `snapshot`, `watch --install-service` oder `integrate ... install`.
+`rpath` verändert beim Refresh keine systemweiten Umgebungsvariablen. Es berechnet einen Plan und gibt Befehle für die gewählte Shell aus. Persistente Schreibvorgänge passieren nur bei expliziten Befehlen wie `install`, `uninstall`, `upgrade`, `snapshot`, `watch --install-service` oder `integrate ... install`.
 
 Profil-Installer erstellen Backups, bevor sie Shell-Profile bearbeiten. Emit-Modus gibt keine Mutationsbefehle aus, wenn der Plan harte Fehler enthält.

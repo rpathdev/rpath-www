@@ -59,3 +59,5 @@ rpath uninstall --all
 ```
 
 Uninstall removes only rpath's marked block or wrapper file. It leaves unrelated profile content in place.
+
+To remove the hosted-install binary and PATH entry too, use the [Uninstall](./uninstall) guide.
