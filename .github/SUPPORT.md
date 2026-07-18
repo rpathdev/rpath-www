@@ -32,4 +32,4 @@ bun run build
 
 Use the private reporting process described in the root repository:
 
-- https://github.com/builtbyjonas/rpath/blob/main/SECURITY.md
+- https://github.com/rpathdev/rpath/blob/main/SECURITY.md

@@ -66,7 +66,7 @@ rpath upgrade --check
 ## Aus dem Quellcode bauen
 
 ```sh
-git clone https://github.com/builtbyjonas/rpath.git
+git clone https://github.com/rpathdev/rpath.git
 cd rpath
 cargo build --release -p rpath
 ```

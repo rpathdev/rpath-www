@@ -6,7 +6,7 @@ import {
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
 
 const siteUrl = "https://rpath.dev";
-const currentVersion = "v0.1.0";
+const currentVersion = "v0.1.1";
 const ogImage = `${siteUrl}/og.png`;
 const siteDescription =
   "Refresh your shell PATH and environment without restarting.";
@@ -135,11 +135,11 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.png",
     editLink: {
-      pattern: "https://github.com/builtbyjonas/rpath/edit/main/www/:path",
+      pattern: "https://github.com/rpathdev/rpath/edit/main/www/:path",
       text: "Edit this page on GitHub",
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/builtbyjonas/rpath" },
+      { icon: "github", link: "https://github.com/rpathdev/rpath" },
     ],
     footer: {
       message: "Released under the MIT License.",
@@ -167,15 +167,15 @@ export default defineConfig({
             items: [
               {
                 text: "Changelog",
-                link: "https://github.com/builtbyjonas/rpath/blob/main/CHANGELOG.md",
+                link: "https://github.com/rpathdev/rpath/blob/main/CHANGELOG.md",
               },
               {
                 text: "Roadmap",
-                link: "https://github.com/builtbyjonas/rpath/blob/main/ROADMAP.md",
+                link: "https://github.com/rpathdev/rpath/blob/main/ROADMAP.md",
               },
               {
                 text: "Releases",
-                link: "https://github.com/builtbyjonas/rpath/releases",
+                link: "https://github.com/rpathdev/rpath/releases",
               },
             ],
           },
@@ -217,15 +217,15 @@ export default defineConfig({
             items: [
               {
                 text: "Changelog",
-                link: "https://github.com/builtbyjonas/rpath/blob/main/CHANGELOG.md",
+                link: "https://github.com/rpathdev/rpath/blob/main/CHANGELOG.md",
               },
               {
                 text: "Roadmap",
-                link: "https://github.com/builtbyjonas/rpath/blob/main/ROADMAP.md",
+                link: "https://github.com/rpathdev/rpath/blob/main/ROADMAP.md",
               },
               {
                 text: "Releases",
-                link: "https://github.com/builtbyjonas/rpath/releases",
+                link: "https://github.com/rpathdev/rpath/releases",
               },
             ],
           },
@@ -247,7 +247,7 @@ export default defineConfig({
           ],
         },
         editLink: {
-          pattern: "https://github.com/builtbyjonas/rpath/edit/main/www/:path",
+          pattern: "https://github.com/rpathdev/rpath/edit/main/www/:path",
           text: "Diese Seite auf GitHub bearbeiten",
         },
       },
@@ -362,8 +362,8 @@ function softwareApplicationJsonLd(url: string, description: string) {
     operatingSystem: "Windows, macOS, Linux",
     softwareVersion: currentVersion,
     programmingLanguage: "Rust",
-    license: "https://github.com/builtbyjonas/rpath/blob/main/LICENSE",
-    codeRepository: "https://github.com/builtbyjonas/rpath",
+    license: "https://github.com/rpathdev/rpath/blob/main/LICENSE",
+    codeRepository: "https://github.com/rpathdev/rpath",
     author: {
       "@type": "Person",
       name: "ByJonas",

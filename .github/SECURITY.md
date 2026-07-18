@@ -2,7 +2,7 @@
 
 The authoritative security policy is maintained in the repository root:
 
-- https://github.com/builtbyjonas/rpath/blob/main/SECURITY.md
+- https://github.com/rpathdev/rpath/blob/main/SECURITY.md
 
 Please use that policy for:
 

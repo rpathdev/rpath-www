@@ -2,7 +2,7 @@
 
 The primary contributing guide lives at the repository root:
 
-- https://github.com/builtbyjonas/rpath/blob/main/CONTRIBUTING.md
+- https://github.com/rpathdev/rpath/blob/main/CONTRIBUTING.md
 
 This file clarifies documentation-specific expectations.
 

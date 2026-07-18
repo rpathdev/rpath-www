@@ -36,4 +36,4 @@ Documentation content follows the main project license: MIT.
 
 Please open issues or pull requests in the main repository:
 
-- https://github.com/builtbyjonas/rpath
+- https://github.com/rpathdev/rpath

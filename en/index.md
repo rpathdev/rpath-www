@@ -17,7 +17,7 @@ editLink: false
         <div class="rpath-actions">
           <a class="rpath-action rpath-action--primary" href="/guide/installation">Start with rpath</a>
           <a class="rpath-action" href="/reference/commands">Command reference</a>
-          <a class="rpath-action" href="https://github.com/builtbyjonas/rpath">GitHub</a>
+          <a class="rpath-action" href="https://github.com/rpathdev/rpath">GitHub</a>
         </div>
       </div>
       <div class="rpath-terminal" aria-label="rpath terminal preview">
