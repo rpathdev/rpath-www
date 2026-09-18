@@ -6,7 +6,7 @@ import {
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
 
 const siteUrl = "https://rpath.dev";
-const currentVersion = "v0.1.1";
+const currentVersion = "v0.1.3";
 const ogImage = `${siteUrl}/og.png`;
 const siteDescription =
   "Refresh your shell PATH and environment without restarting.";
